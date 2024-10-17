@@ -1,0 +1,636 @@
+digraph {
+	LoadOpenSimLibrary -> IO [color=goldenrod style=dashed]
+	LoadOpenSimLibrary -> Logger [color=goldenrod style=dashed]
+	osimCommonDLL -> RegisterTypes_osimCommon [color=goldenrod style=dashed]
+	Function -> Object [color=black style=solid]
+	LoadOpenSimLibrary -> osimCommonDLL [color=black style=solid]
+	GCVSplineSet -> osimCommonDLL [color=black style=solid]
+	GCVSplineSet -> Object [color=black style=solid]
+	GCVSplineSet -> FunctionSet [color=black style=solid]
+	GCVSplineSet -> TimeSeriesTable [color=black style=solid]
+	PiecewiseConstantFunction -> Constant [color=goldenrod style=dashed]
+	PiecewiseConstantFunction -> FunctionAdapter [color=goldenrod style=dashed]
+	PiecewiseConstantFunction -> SimmMacros [color=goldenrod style=dashed]
+	PiecewiseConstantFunction -> XYFunctionInterface [color=goldenrod style=dashed]
+	APDMDataReader -> Object [color=black style=solid]
+	APDMDataReader -> ExperimentalSensor [color=black style=solid]
+	APDMDataReader -> APDMDataReaderSettings [color=black style=solid]
+	APDMDataReader -> TimeSeriesTable [color=black style=solid]
+	APDMDataReader -> IMUDataReader [color=black style=solid]
+	DataTable -> AbstractDataTable [color=black style=solid]
+	DataTable -> Assertion [color=black style=solid]
+	DataTable -> FileAdapter [color=black style=solid]
+	DataTable -> IO [color=black style=solid]
+	ModelDisplayHints -> osimCommonDLL [color=black style=solid]
+	ModelDisplayHints -> Object [color=black style=solid]
+	XsensDataReader -> Exception [color=goldenrod style=dashed]
+	XsensDataReader -> FileAdapter [color=goldenrod style=dashed]
+	XsensDataReader -> TimeSeriesTable [color=goldenrod style=dashed]
+	IO -> Logger [color=goldenrod style=dashed]
+	DataAdapter -> Adapters [color=goldenrod style=dashed]
+	osimCommon -> About [color=black style=solid]
+	osimCommon -> Adapters [color=black style=solid]
+	osimCommon -> Assertion [color=black style=solid]
+	osimCommon -> CommonUtilities [color=black style=solid]
+	osimCommon -> Constant [color=black style=solid]
+	osimCommon -> DataTable [color=black style=solid]
+	osimCommon -> FunctionSet [color=black style=solid]
+	osimCommon -> GCVSpline [color=black style=solid]
+	osimCommon -> GCVSplineSet [color=black style=solid]
+	osimCommon -> IO [color=black style=solid]
+	osimCommon -> LatinHypercubeDesign [color=black style=solid]
+	osimCommon -> LinearFunction [color=black style=solid]
+	osimCommon -> LoadOpenSimLibrary [color=black style=solid]
+	osimCommon -> Logger [color=black style=solid]
+	osimCommon -> ModelDisplayHints [color=black style=solid]
+	osimCommon -> MultiplierFunction [color=black style=solid]
+	osimCommon -> MultivariatePolynomialFunction [color=black style=solid]
+	osimCommon -> Object [color=black style=solid]
+	osimCommon -> ObjectGroup [color=black style=solid]
+	osimCommon -> PiecewiseConstantFunction [color=black style=solid]
+	osimCommon -> PiecewiseLinearFunction [color=black style=solid]
+	osimCommon -> PolynomialFunction [color=black style=solid]
+	osimCommon -> RegisterTypes_osimCommon [color=black style=solid]
+	osimCommon -> Reporter [color=black style=solid]
+	osimCommon -> Scale [color=black style=solid]
+	osimCommon -> ScaleSet [color=black style=solid]
+	osimCommon -> SignalGenerator [color=black style=solid]
+	osimCommon -> SimmSpline [color=black style=solid]
+	osimCommon -> Sine [color=black style=solid]
+	osimCommon -> SmoothSegmentedFunctionFactory [color=black style=solid]
+	osimCommon -> StepFunction [color=black style=solid]
+	osimCommon -> Stopwatch [color=black style=solid]
+	osimCommon -> StorageInterface [color=black style=solid]
+	osimCommon -> TableSource [color=black style=solid]
+	osimCommon -> TableUtilities [color=black style=solid]
+	osimCommon -> TimeSeriesTable [color=black style=solid]
+	ComponentList -> osimCommonDLL [color=black style=solid]
+	MultiplierFunction -> osimCommonDLL [color=black style=solid]
+	MultiplierFunction -> PropertyObjPtr [color=black style=solid]
+	MultiplierFunction -> PropertyDbl [color=black style=solid]
+	MultiplierFunction -> Function [color=black style=solid]
+	TableUtilities -> Array [color=black style=solid]
+	TableUtilities -> GCVSpline [color=black style=solid]
+	TableUtilities -> TimeSeriesTable [color=black style=solid]
+	TableUtilities -> osimCommonDLL [color=black style=solid]
+	PropertyIntArray -> osimCommonDLL [color=black style=solid]
+	PropertyIntArray -> Property_Deprecated [color=black style=solid]
+	PropertyIntArray -> Array [color=black style=solid]
+	ComponentOutput -> Exception [color=black style=solid]
+	ComponentOutput -> Object [color=black style=solid]
+	GCVSpline -> osimCommonDLL [color=black style=solid]
+	GCVSpline -> PropertyInt [color=black style=solid]
+	GCVSpline -> PropertyDbl [color=black style=solid]
+	GCVSpline -> PropertyDblArray [color=black style=solid]
+	GCVSpline -> Function [color=black style=solid]
+	CSVFileAdapter -> DelimFileAdapter [color=black style=solid]
+	Reporter -> Component [color=black style=solid]
+	Reporter -> TimeSeriesTable [color=black style=solid]
+	ExperimentalSensor -> Object [color=black style=solid]
+	Lmdif -> osimCommonDLL [color=black style=solid]
+	ArrayPtrs -> osimCommonDLL [color=black style=solid]
+	ArrayPtrs -> Exception [color=black style=solid]
+	ArrayPtrs -> Logger [color=black style=solid]
+	RootSolver -> osimCommonDLL [color=black style=solid]
+	RootSolver -> Array [color=black style=solid]
+	RootSolver -> VectorFunctionUncoupledNxN [color=black style=solid]
+	LatinHypercubeDesign -> osimCommonDLL [color=black style=solid]
+	LatinHypercubeDesign -> CommonUtilities [color=black style=solid]
+	Reporter -> TimeSeriesTable [color=goldenrod style=dashed]
+	STOFileAdapter -> DelimFileAdapter [color=black style=solid]
+	Exception -> osimCommonDLL [color=goldenrod style=dashed]
+	Exception -> IO [color=goldenrod style=dashed]
+	Exception -> Object [color=goldenrod style=dashed]
+	Adapters -> DataAdapter [color=black style=solid]
+	Adapters -> FileAdapter [color=black style=solid]
+	Adapters -> TRCFileAdapter [color=black style=solid]
+	Adapters -> DelimFileAdapter [color=black style=solid]
+	Adapters -> STOFileAdapter [color=black style=solid]
+	Adapters -> CSVFileAdapter [color=black style=solid]
+	Adapters -> C3DFileAdapter [color=black style=solid]
+	MultivariatePolynomialFunction -> osimCommonDLL [color=black style=solid]
+	MultivariatePolynomialFunction -> Function [color=black style=solid]
+	VectorFunctionUncoupledNxN -> PropertyDbl [color=goldenrod style=dashed]
+	Assertion -> Exception [color=goldenrod style=dashed]
+	IO -> osimCommonDLL [color=black style=solid]
+	DataQueue -> osimCommonDLL [color=black style=solid]
+	Exception -> osimCommonDLL [color=black style=solid]
+	DebugUtilities -> osimCommonDLL [color=black style=solid]
+	TRCFileAdapter -> IO [color=goldenrod style=dashed]
+	Storage -> StateVector [color=black style=solid]
+	Storage -> Units [color=black style=solid]
+	Storage -> StorageInterface [color=black style=solid]
+	Storage -> TimeSeriesTable [color=black style=solid]
+	PropertyInt -> osimCommonDLL [color=black style=solid]
+	PropertyInt -> Property_Deprecated [color=black style=solid]
+	Component -> ComponentList [color=black style=solid]
+	Component -> ComponentPath [color=black style=solid]
+	Component -> Logger [color=black style=solid]
+	Component -> Array [color=black style=solid]
+	Component -> ComponentOutput [color=black style=solid]
+	Component -> ComponentSocket [color=black style=solid]
+	Component -> Object [color=black style=solid]
+	Component -> osimCommonDLL [color=black style=solid]
+	LatinHypercubeDesign -> Assertion [color=goldenrod style=dashed]
+	LatinHypercubeDesign -> Exception [color=goldenrod style=dashed]
+	LatinHypercubeDesign -> Logger [color=goldenrod style=dashed]
+	XYFunctionInterface -> osimCommonDLL [color=black style=solid]
+	XYFunctionInterface -> Array [color=black style=solid]
+	XYFunctionInterface -> Object [color=black style=solid]
+	FileAdapter -> DataAdapter [color=black style=solid]
+	Sine -> Function [color=black style=solid]
+	Sine -> FunctionAdapter [color=black style=solid]
+	TimeSeriesTable -> DataTable [color=black style=solid]
+	TimeSeriesTable -> Logger [color=black style=solid]
+	DelimFileAdapter -> About [color=black style=solid]
+	DelimFileAdapter -> FileAdapter [color=black style=solid]
+	DelimFileAdapter -> TimeSeriesTable [color=black style=solid]
+	DelimFileAdapter -> IO [color=black style=solid]
+	Assertion -> osimCommonDLL [color=black style=solid]
+	PropertyGroup -> osimCommonDLL [color=black style=solid]
+	PropertyGroup -> Property_Deprecated [color=black style=solid]
+	PropertyGroup -> Array [color=black style=solid]
+	PropertySet -> osimCommonDLL [color=black style=solid]
+	PropertySet -> ArrayPtrs [color=black style=solid]
+	PropertySet -> Property_Deprecated [color=black style=solid]
+	PropertySet -> PropertyDblVec [color=black style=solid]
+	PropertyTransform -> Assertion [color=goldenrod style=dashed]
+	APDMDataReaderSettings -> Object [color=black style=solid]
+	APDMDataReaderSettings -> ExperimentalSensor [color=black style=solid]
+	Property -> AbstractProperty [color=black style=solid]
+	Property -> Assertion [color=black style=solid]
+	Property -> Exception [color=black style=solid]
+	Property -> Logger [color=black style=solid]
+	Property -> Array [color=black style=solid]
+	ComponentPath -> Exception [color=goldenrod style=dashed]
+	Set -> osimCommonDLL [color=black style=solid]
+	Set -> Object [color=black style=solid]
+	Set -> ArrayPtrs [color=black style=solid]
+	Set -> ObjectGroup [color=black style=solid]
+	Set -> PropertyObjArray [color=black style=solid]
+	SignalGenerator -> Constant [color=goldenrod style=dashed]
+	PropertyDblArray -> osimCommonDLL [color=black style=solid]
+	PropertyDblArray -> Property_Deprecated [color=black style=solid]
+	PropertyDblArray -> Array [color=black style=solid]
+	Property_Deprecated -> Assertion [color=black style=solid]
+	Property_Deprecated -> osimCommonDLL [color=black style=solid]
+	Property_Deprecated -> AbstractProperty [color=black style=solid]
+	Property_Deprecated -> Exception [color=black style=solid]
+	MultiplierFunction -> FunctionAdapter [color=goldenrod style=dashed]
+	PropertyObj -> Assertion [color=black style=solid]
+	PropertyObj -> osimCommonDLL [color=black style=solid]
+	PropertyObj -> Object [color=black style=solid]
+	PropertyObj -> Property_Deprecated [color=black style=solid]
+	XMLDocument -> Assertion [color=goldenrod style=dashed]
+	XMLDocument -> Object [color=goldenrod style=dashed]
+	PropertyObjArray -> osimCommonDLL [color=black style=solid]
+	PropertyObjArray -> ArrayPtrs [color=black style=solid]
+	PropertyObjArray -> Property_Deprecated [color=black style=solid]
+	PropertyObjArray -> Object [color=black style=solid]
+	Object -> Assertion [color=black style=solid]
+	Object -> osimCommonDLL [color=black style=solid]
+	Object -> PropertySet [color=black style=solid]
+	Object -> PropertyTable [color=black style=solid]
+	Object -> Property [color=black style=solid]
+	ValueArrayDictionary -> ValueArray [color=black style=solid]
+	PropertyDbl -> osimCommonDLL [color=black style=solid]
+	PropertyDbl -> Property_Deprecated [color=black style=solid]
+	PiecewiseConstantFunction -> osimCommonDLL [color=black style=solid]
+	PiecewiseConstantFunction -> Function [color=black style=solid]
+	PiecewiseConstantFunction -> PropertyDblArray [color=black style=solid]
+	SmoothSegmentedFunction -> osimCommonDLL [color=black style=solid]
+	SmoothSegmentedFunction -> SegmentedQuinticBezierToolkit [color=black style=solid]
+	StateVector -> IO [color=goldenrod style=dashed]
+	ComponentList -> Component [color=goldenrod style=dashed]
+	SmoothSegmentedFunctionFactory -> osimCommonDLL [color=black style=solid]
+	SmoothSegmentedFunctionFactory -> SmoothSegmentedFunction [color=black style=solid]
+	XMLDocument -> osimCommonDLL [color=black style=solid]
+	XMLDocument -> Array [color=black style=solid]
+	RegisterTypes_osimCommon -> osimCommonDLL [color=black style=solid]
+	StorageInterface -> osimCommonDLL [color=black style=solid]
+	StorageInterface -> Object [color=black style=solid]
+	osimCommonTemplates -> osimCommonDLL [color=goldenrod style=dashed]
+	osimCommonTemplates -> Array [color=goldenrod style=dashed]
+	osimCommonTemplates -> ArrayPtrs [color=goldenrod style=dashed]
+	osimCommonTemplates -> Set [color=goldenrod style=dashed]
+	LinearFunction -> Function [color=black style=solid]
+	LinearFunction -> PropertyDblArray [color=black style=solid]
+	ScaleSet -> Scale [color=black style=solid]
+	ScaleSet -> Set [color=black style=solid]
+	Scale -> osimCommonDLL [color=black style=solid]
+	Scale -> Object [color=black style=solid]
+	Scale -> PropertyStr [color=black style=solid]
+	Scale -> PropertyDblArray [color=black style=solid]
+	Scale -> PropertyDbl [color=black style=solid]
+	Scale -> PropertyBool [color=black style=solid]
+	Scale -> PropertyDblVec [color=black style=solid]
+	PropertyIntArray -> Array [color=goldenrod style=dashed]
+	PiecewiseLinearFunction -> osimCommonDLL [color=black style=solid]
+	PiecewiseLinearFunction -> Array [color=black style=solid]
+	PiecewiseLinearFunction -> PropertyDblArray [color=black style=solid]
+	PiecewiseLinearFunction -> Function [color=black style=solid]
+	RegisterTypes_osimCommon -> Object [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> Component [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> FunctionSet [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> GCVSplineSet [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> ScaleSet [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> GCVSpline [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> Scale [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> SimmSpline [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> Constant [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> Sine [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> StepFunction [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> LinearFunction [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> PiecewiseLinearFunction [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> PiecewiseConstantFunction [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> MultiplierFunction [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> PolynomialFunction [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> MultivariatePolynomialFunction [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> SignalGenerator [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> ObjectGroup [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> Reporter [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> TableSource [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> ModelDisplayHints [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> ExperimentalSensor [color=goldenrod style=dashed]
+	RegisterTypes_osimCommon -> XsensDataReaderSettings [color=goldenrod style=dashed]
+	AbstractProperty -> Assertion [color=black style=solid]
+	AbstractProperty -> osimCommonDLL [color=black style=solid]
+	AbstractProperty -> Exception [color=black style=solid]
+	XsensDataReaderSettings -> Object [color=black style=solid]
+	XsensDataReaderSettings -> ExperimentalSensor [color=black style=solid]
+	FunctionAdapter -> Function [color=black style=solid]
+	AbstractDataTable -> Exception [color=black style=solid]
+	AbstractDataTable -> ValueArrayDictionary [color=black style=solid]
+	LogSink -> osimCommonDLL [color=black style=solid]
+	ComponentOutput -> Component [color=goldenrod style=dashed]
+	PropertyTransform -> osimCommonDLL [color=black style=solid]
+	PropertyTransform -> PropertyDblArray [color=black style=solid]
+	PropertyStr -> osimCommonDLL [color=black style=solid]
+	PropertyStr -> Property_Deprecated [color=black style=solid]
+	PropertyDblArray -> Array [color=goldenrod style=dashed]
+	VectorFunction -> osimCommonDLL [color=black style=solid]
+	VectorFunction -> Object [color=black style=solid]
+	VectorFunction -> Array [color=black style=solid]
+	MarkerData -> SimmIO [color=goldenrod style=dashed]
+	MarkerData -> SimmMacros [color=goldenrod style=dashed]
+	MarkerData -> Storage [color=goldenrod style=dashed]
+	MarkerData -> STOFileAdapter [color=goldenrod style=dashed]
+	VectorFunctionUncoupledNxN -> osimCommonDLL [color=black style=solid]
+	VectorFunctionUncoupledNxN -> VectorFunction [color=black style=solid]
+	VectorFunctionUncoupledNxN -> Array [color=black style=solid]
+	CommonUtilities -> osimCommonDLL [color=black style=solid]
+	CommonUtilities -> Assertion [color=black style=solid]
+	SimmIO -> osimCommonDLL [color=black style=solid]
+	PropertyObjPtr -> Assertion [color=black style=solid]
+	PropertyObjPtr -> osimCommonDLL [color=black style=solid]
+	PropertyObjPtr -> Object [color=black style=solid]
+	PropertyObjPtr -> Property_Deprecated [color=black style=solid]
+	Array -> Assertion [color=black style=solid]
+	Array -> Exception [color=black style=solid]
+	Array -> osimCommonDLL [color=black style=solid]
+	Array -> Logger [color=black style=solid]
+	SegmentedQuinticBezierToolkit -> osimCommonDLL [color=black style=solid]
+	PropertyDblVec -> Assertion [color=black style=solid]
+	PropertyDblVec -> osimCommonDLL [color=black style=solid]
+	PropertyDblVec -> Property_Deprecated [color=black style=solid]
+	PropertyDblVec -> Array [color=black style=solid]
+	TableUtilities -> CommonUtilities [color=goldenrod style=dashed]
+	TableUtilities -> FunctionSet [color=goldenrod style=dashed]
+	TableUtilities -> GCVSplineSet [color=goldenrod style=dashed]
+	TableUtilities -> PiecewiseLinearFunction [color=goldenrod style=dashed]
+	TableUtilities -> Signal [color=goldenrod style=dashed]
+	TableUtilities -> Storage [color=goldenrod style=dashed]
+	TableSource -> TimeSeriesTable [color=black style=solid]
+	TableSource -> Component [color=black style=solid]
+	PropertyBool -> osimCommonDLL [color=black style=solid]
+	PropertyBool -> Property_Deprecated [color=black style=solid]
+	StateVector -> osimCommonDLL [color=black style=solid]
+	StateVector -> Array [color=black style=solid]
+	Property -> Object [color=goldenrod style=dashed]
+	Units -> osimCommonDLL [color=black style=solid]
+	TRCFileAdapter -> FileAdapter [color=black style=solid]
+	TRCFileAdapter -> TimeSeriesTable [color=black style=solid]
+	ComponentSocket -> osimCommonDLL [color=black style=solid]
+	ComponentSocket -> ComponentPath [color=black style=solid]
+	ComponentSocket -> ComponentOutput [color=black style=solid]
+	ComponentSocket -> ComponentList [color=black style=solid]
+	ComponentSocket -> Object [color=black style=solid]
+	ComponentSocket -> Exception [color=black style=solid]
+	ComponentSocket -> Property [color=black style=solid]
+	Component -> IO [color=goldenrod style=dashed]
+	Component -> XMLDocument [color=goldenrod style=dashed]
+	PropertyBoolArray -> osimCommonDLL [color=black style=solid]
+	PropertyBoolArray -> Property_Deprecated [color=black style=solid]
+	PropertyBoolArray -> Array [color=black style=solid]
+	IMUDataReader -> osimCommonDLL [color=black style=solid]
+	IMUDataReader -> TimeSeriesTable [color=black style=solid]
+	IMUDataReader -> DataAdapter [color=black style=solid]
+	PropertySet -> PropertyInt [color=goldenrod style=dashed]
+	OptimizationTarget -> osimCommonDLL [color=black style=solid]
+	OptimizationTarget -> Array [color=black style=solid]
+	DataAdapter -> osimCommonDLL [color=black style=solid]
+	DataAdapter -> Exception [color=black style=solid]
+	DataAdapter -> AbstractDataTable [color=black style=solid]
+	Logger -> osimCommonDLL [color=black style=solid]
+	StepFunction -> Function [color=black style=solid]
+	StepFunction -> PropertyDbl [color=black style=solid]
+	PiecewiseLinearFunction -> Constant [color=goldenrod style=dashed]
+	PiecewiseLinearFunction -> FunctionAdapter [color=goldenrod style=dashed]
+	PiecewiseLinearFunction -> SimmMacros [color=goldenrod style=dashed]
+	PiecewiseLinearFunction -> XYFunctionInterface [color=goldenrod style=dashed]
+	SimmSpline -> Constant [color=goldenrod style=dashed]
+	SimmSpline -> SimmMacros [color=goldenrod style=dashed]
+	SimmSpline -> XYFunctionInterface [color=goldenrod style=dashed]
+	SimmSpline -> FunctionAdapter [color=goldenrod style=dashed]
+	XsensDataReader -> Object [color=black style=solid]
+	XsensDataReader -> ExperimentalSensor [color=black style=solid]
+	XsensDataReader -> DataAdapter [color=black style=solid]
+	XsensDataReader -> XsensDataReaderSettings [color=black style=solid]
+	XsensDataReader -> TimeSeriesTable [color=black style=solid]
+	XsensDataReader -> IMUDataReader [color=black style=solid]
+	XYFunctionInterface -> Constant [color=goldenrod style=dashed]
+	XYFunctionInterface -> Function [color=goldenrod style=dashed]
+	XYFunctionInterface -> GCVSpline [color=goldenrod style=dashed]
+	XYFunctionInterface -> LinearFunction [color=goldenrod style=dashed]
+	XYFunctionInterface -> MultiplierFunction [color=goldenrod style=dashed]
+	XYFunctionInterface -> PiecewiseConstantFunction [color=goldenrod style=dashed]
+	XYFunctionInterface -> PiecewiseLinearFunction [color=goldenrod style=dashed]
+	XYFunctionInterface -> SimmSpline [color=goldenrod style=dashed]
+	XYFunctionInterface -> StepFunction [color=goldenrod style=dashed]
+	StorageFactory -> osimCommonDLL [color=black style=solid]
+	APDMDataReader -> Exception [color=goldenrod style=dashed]
+	APDMDataReader -> FileAdapter [color=goldenrod style=dashed]
+	APDMDataReader -> TimeSeriesTable [color=goldenrod style=dashed]
+	Signal -> Array [color=goldenrod style=dashed]
+	SimmSpline -> osimCommonDLL [color=black style=solid]
+	SimmSpline -> Array [color=black style=solid]
+	SimmSpline -> PropertyDblArray [color=black style=solid]
+	SimmSpline -> Function [color=black style=solid]
+	ObjectGroup -> osimCommonDLL [color=black style=solid]
+	ObjectGroup -> PropertyStrArray [color=black style=solid]
+	ObjectGroup -> Object [color=black style=solid]
+	FunctionSet -> Function [color=black style=solid]
+	FunctionSet -> osimCommonDLL [color=black style=solid]
+	FunctionSet -> Object [color=black style=solid]
+	FunctionSet -> Set [color=black style=solid]
+	DebugUtilities -> Logger [color=goldenrod style=dashed]
+	MultivariatePolynomialFunction -> Exception [color=goldenrod style=dashed]
+	SignalGenerator -> Function [color=black style=solid]
+	SignalGenerator -> Component [color=black style=solid]
+	MarkerFrame -> osimCommonDLL [color=black style=solid]
+	MarkerFrame -> Object [color=black style=solid]
+	MarkerFrame -> Units [color=black style=solid]
+	AbstractProperty -> Assertion [color=goldenrod style=dashed]
+	AbstractProperty -> Object [color=goldenrod style=dashed]
+	PolynomialFunction -> Function [color=black style=solid]
+	MarkerData -> Array [color=black style=solid]
+	MarkerData -> ArrayPtrs [color=black style=solid]
+	MarkerData -> MarkerFrame [color=black style=solid]
+	MarkerData -> Object [color=black style=solid]
+	MarkerData -> Units [color=black style=solid]
+	GCVSpline -> Constant [color=goldenrod style=dashed]
+	GCVSpline -> gcvspl [color=goldenrod style=dashed]
+	GCVSpline -> XYFunctionInterface [color=goldenrod style=dashed]
+	Constant -> Function [color=black style=solid]
+	Constant -> PropertyDbl [color=black style=solid]
+	PropertyStrArray -> Array [color=goldenrod style=dashed]
+	C3DFileAdapter -> FileAdapter [color=black style=solid]
+	C3DFileAdapter -> TimeSeriesTable [color=black style=solid]
+	C3DFileAdapter -> Event [color=black style=solid]
+	Storage -> Assertion [color=goldenrod style=dashed]
+	Storage -> CommonUtilities [color=goldenrod style=dashed]
+	Storage -> GCVSpline [color=goldenrod style=dashed]
+	Storage -> GCVSplineSet [color=goldenrod style=dashed]
+	Storage -> IO [color=goldenrod style=dashed]
+	Storage -> Logger [color=goldenrod style=dashed]
+	Storage -> STOFileAdapter [color=goldenrod style=dashed]
+	Storage -> Signal [color=goldenrod style=dashed]
+	Storage -> SimmMacros [color=goldenrod style=dashed]
+	Storage -> StateVector [color=goldenrod style=dashed]
+	Storage -> TableUtilities [color=goldenrod style=dashed]
+	Storage -> TimeSeriesTable [color=goldenrod style=dashed]
+	Object -> Assertion [color=goldenrod style=dashed]
+	Object -> Exception [color=goldenrod style=dashed]
+	Object -> IO [color=goldenrod style=dashed]
+	Object -> Logger [color=goldenrod style=dashed]
+	Object -> PropertyTransform [color=goldenrod style=dashed]
+	Object -> Property_Deprecated [color=goldenrod style=dashed]
+	Object -> XMLDocument [color=goldenrod style=dashed]
+	ValueArray -> Exception [color=black style=solid]
+	GCVSplineSet -> GCVSpline [color=goldenrod style=dashed]
+	GCVSplineSet -> Storage [color=goldenrod style=dashed]
+	PropertyTable -> osimCommonDLL [color=black style=solid]
+	PropertyTable -> Property [color=black style=solid]
+	FileAdapter -> IO [color=goldenrod style=dashed]
+	FileAdapter -> STOFileAdapter [color=goldenrod style=dashed]
+	PropertyStrArray -> osimCommonDLL [color=black style=solid]
+	PropertyStrArray -> Property_Deprecated [color=black style=solid]
+	PropertyStrArray -> Array [color=black style=solid]
+	PropertyTable -> Assertion [color=goldenrod style=dashed]
+	ComponentPath -> osimCommonDLL [color=black style=solid]
+	C3DFileAdapter -> STOFileAdapter [color=goldenrod style=dashed]
+	ComponentSocket -> Component [color=goldenrod style=dashed]
+	CommonUtilities -> PiecewiseLinearFunction [color=goldenrod style=dashed]
+	CommonUtilities -> STOFileAdapter [color=goldenrod style=dashed]
+	CommonUtilities -> TimeSeriesTable [color=goldenrod style=dashed]
+	About -> osimCommonDLL [color=black style=solid]
+	osimCommonTemplates -> osimCommonDLL [color=black style=solid]
+	osimCommonTemplates -> Array [color=black style=solid]
+	osimCommonTemplates -> ArrayPtrs [color=black style=solid]
+	Signal -> osimCommonDLL [color=black style=solid]
+	Logger -> Exception [color=goldenrod style=dashed]
+	Logger -> IO [color=goldenrod style=dashed]
+	Logger -> LogSink [color=goldenrod style=dashed]
+	subgraph "cluster_/home/alexbeat/opensim-workspace/opensim-core-source/OpenSim/Common" {
+		LoadOpenSimLibrary
+		osimCommonDLL
+		Function
+		LoadOpenSimLibrary
+		GCVSplineSet
+		FunctionSet
+		PiecewiseConstantFunction
+		APDMDataReader
+		DataTable
+		ModelDisplayHints
+		XsensDataReader
+		IO
+		DataAdapter
+		osimCommon
+		ComponentList
+		MultiplierFunction
+		TableUtilities
+		PropertyIntArray
+		ComponentOutput
+		GCVSpline
+		CSVFileAdapter
+		Reporter
+		ExperimentalSensor
+		Lmdif
+		ArrayPtrs
+		RootSolver
+		LatinHypercubeDesign
+		Reporter
+		STOFileAdapter
+		Exception
+		Adapters
+		MultivariatePolynomialFunction
+		Stopwatch
+		VectorFunctionUncoupledNxN
+		Assertion
+		IO
+		DataQueue
+		Exception
+		DebugUtilities
+		ObjectGroup
+		TRCFileAdapter
+		Storage
+		PropertyObj
+		PropertyInt
+		Component
+		LatinHypercubeDesign
+		XYFunctionInterface
+		VectorFunction
+		FileAdapter
+		Sine
+		TimeSeriesTable
+		DelimFileAdapter
+		Assertion
+		PropertyGroup
+		SegmentedQuinticBezierToolkit
+		PropertySet
+		PropertyDbl
+		PropertyTransform
+		APDMDataReaderSettings
+		Property
+		ComponentPath
+		Set
+		SignalGenerator
+		AbstractDataTable
+		PropertyStr
+		PropertyDblArray
+		Property_Deprecated
+		MultiplierFunction
+		PropertyObj
+		gcvspl
+		XMLDocument
+		PropertyObjArray
+		Object
+		ValueArrayDictionary
+		PropertyBool
+		SmoothSegmentedFunction
+		PropertyDbl
+		PiecewiseConstantFunction
+		SmoothSegmentedFunction
+		StateVector
+		ComponentList
+		SmoothSegmentedFunctionFactory
+		XMLDocument
+		RegisterTypes_osimCommon
+		StorageInterface
+		osimCommonTemplates
+		PropertyBoolArray
+		FunctionAdapter
+		LinearFunction
+		ScaleSet
+		LinearFunction
+		ScaleSet
+		Scale
+		PropertyIntArray
+		PiecewiseLinearFunction
+		RegisterTypes_osimCommon
+		AbstractProperty
+		XsensDataReaderSettings
+		Units
+		FunctionAdapter
+		AbstractDataTable
+		RootSolver
+		LogSink
+		ComponentOutput
+		PropertyTransform
+		PropertyStr
+		PropertyDblArray
+		VectorFunction
+		Property_Deprecated
+		PropertyInt
+		MarkerData
+		VectorFunctionUncoupledNxN
+		Scale
+		CommonUtilities
+		SimmIO
+		PropertyObjPtr
+		Array
+		SegmentedQuinticBezierToolkit
+		Lmdif
+		PropertyDblVec
+		TableUtilities
+		TableSource
+		PropertyBool
+		StateVector
+		Property
+		Units
+		TRCFileAdapter
+		ComponentSocket
+		Component
+		PropertyBoolArray
+		IMUDataReader
+		Constant
+		PropertySet
+		About
+		OptimizationTarget
+		DataAdapter
+		Logger
+		StepFunction
+		PiecewiseLinearFunction
+		PropertyGroup
+		StepFunction
+		SimmSpline
+		SimmMacros
+		XsensDataReader
+		XYFunctionInterface
+		StorageFactory
+		APDMDataReader
+		Signal
+		SimmSpline
+		osimCommonDLL
+		ObjectGroup
+		STOFileAdapter
+		FunctionSet
+		DebugUtilities
+		MultivariatePolynomialFunction
+		SignalGenerator
+		MarkerFrame
+		AbstractProperty
+		PolynomialFunction
+		MarkerData
+		GCVSpline
+		Event
+		Constant
+		PropertyStrArray
+		CSVFileAdapter
+		C3DFileAdapter
+		gcvspl
+		Storage
+		Object
+		ValueArray
+		GCVSplineSet
+		SimmIO
+		PropertyTable
+		FileAdapter
+		PropertyStrArray
+		PropertyTable
+		ComponentPath
+		C3DFileAdapter
+		ComponentSocket
+		OptimizationTarget
+		Function
+		CommonUtilities
+		About
+		osimCommonTemplates
+		Signal
+		Logger
+		IMUDataReader
+		SmoothSegmentedFunctionFactory
+		MarkerFrame
+		label="/home/alexbeat/opensim-workspace/opensim-core-source/OpenSim/Common"
+	}
+}
